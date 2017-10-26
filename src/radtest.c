@@ -285,11 +285,12 @@ main(int argc,char **argv)
 	addr.sin_family = AF_INET;
 	addr.sin_port = lport;
 
+/*	------- KETI EDIT LINE -------
 	printf("Radius client: server is host: %s %s  Port: %d\n",
 		host_name,
 		inet_ntoa(addr.sin_addr),
 		ntohs(lport));
-
+*/
 	if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
 		perror("socket");
 		exit(errno);

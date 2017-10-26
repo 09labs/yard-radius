@@ -11,12 +11,12 @@
 #
 # ActivCards  contain up to four slots.  Each slot contains a set 
 # of independent DES keys and parameters, so that in practice an 
-# ActivCard is equivalent to four «Tokens».  Each of those «Tokens» 
+# ActivCard is equivalent to four Â«TokensÂ».  Each of those Â«TokensÂ» 
 # is called a slot and can be used to authenticate through an application 
 # to a distinct ActivEngine.  The concept that the ActivEngine uses to 
 # decide which slot is to be used to verify a dynamic password (ultimately
 # which key among the set of keys stored for this token)  is 
-# the «Application» : Application (Server) -> Slot (Token)
+# the Â«ApplicationÂ» : Application (Server) -> Slot (Token)
 # 
 #  The following specifies the application to be used to determine the
 # token slot associated with RADIUS authentication requests from
@@ -31,7 +31,7 @@ ACTIVCARD_APPLICATION: RADIUS
 # in which the user just types the one-time password displayed by his token
 # instead of the static vulnerable password he was used to.  The other is
 # the standard X9.9, challenge/response mode.
-# ActivCard’s users can choose which mode they want to use by 
+# ActivCardâ€™s users can choose which mode they want to use by 
 # typing a keyword at the RADIUS password prompt:
 #    login: sam
 #    password: challenge_request_keyword
@@ -86,7 +86,7 @@ ACTIVCARD_SECPOLICY: 0
 # between the RADIUS server and the ActivEngine.
 # 
 # At the time of installation of the ActivEngine, a distribution file called
-# «aeg.dis» is generated. It contains the information necessary to 
+# Â«aeg.disÂ» is generated. It contains the information necessary to 
 # establish the connection to the ActivEngine as well as the value of the 
 # public key of the ActivEngine
 # -----------------------------------------------------------------

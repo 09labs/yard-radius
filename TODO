@@ -1,0 +1,47 @@
+[ $Id: TODO,v 1.8 2004/07/01 13:57:52 flovergine Exp $ ]
+
+Yet Another Radius Daemon (YARD RADIUS) TODO list
+-------------------------------------------------
+
+My personal todo list for YARD RADIUS follows, rigorously unordered :-)
+
+
+* Integration of some interesting features stolen from other free
+  servers like Cistron Radius.
+
+* Radtest needs to be extended to test accounting also. I think this
+  is a very urgent thing. But I'm damned lazy.
+
+* Logging messages need to be revised IMHO. Possibly it should use
+  gettext library for international support.
+
+* More work is needed for PAM, with some example modules to read/write data 
+  in relational databases
+
+* I like POSIX compliant sources, so a deep checking of functions and
+  header files is required ASAP. 
+
+* Separate passwd file should be in GDBM format to allow a fast loading.
+
+* A YARD groups file should be introduced along with the alternate passwd
+  file, in GDBM format and without known size limits of standard
+  /etc/group file (i.e. 512 chars for compatibility with NIS).
+
+* radwatch and radtest are far from being complete and debugged :-(
+  Moreover I think their coding style is horrible.
+
+* A new/additional file format should be considered instead of GDBM, 
+  such as Berkeley DB. GDBM maintainment seems currently dismissed.
+
+* A deep analysis of contributed libraries should be conducted in order 
+  to start a re-organization in modules with dynamic loading by dlopen().
+
+* A multithreading implementation should be attempted whenever possible.
+  Many flavor of Unix are currently POSIX multithreaded and this could
+  scale better.
+
+* An UDP wrapper could be implemented in order to filter clients by ip
+  address.
+
+A very long list, as you can see ...
+

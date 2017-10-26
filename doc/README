@@ -1,0 +1,10 @@
+
+Yet Another Radius Daemon (YARD) Documentation
+----------------------------------------------
+
+This directory contains documentation of the Radius server.
+Currently the most of documentation is contained in man pages.
+Other documents are a group of RFCs which are 'the bible' of the 
+RADIUS authorization and accounting protocols. 
+
+

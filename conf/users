@@ -105,7 +105,10 @@ cindy	Password = "crawford", Yard-Simultaneous-Use = 1, Expiration = "Jan 26 200
 	Service-Type = Framed-User,
 	Framed-Protocol = PPP,
 	Framed-IP-Address = 255.255.255.254
-
+	
+keti    Password = "ketilinux",
+    	Reply-Message = "hello keti",
+    	Service-Type = Administrative-User
 
 # This is for damned MAX requests at boot.
 
